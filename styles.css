@@ -326,6 +326,14 @@ ul { list-style: none; }
   opacity: 0.12;
   pointer-events: none;
 }
+/* our-3.png is one flat 1366x768 design image — scaled to 100% width on a
+   narrow phone it shrinks to ~200px tall, making the "2006"/"TODAY" columns
+   too small to read. Below 768px, swap it for 3 pre-cropped slices
+   (images/about/our-3-header/-left/-right.png) stacked full-width instead,
+   so each panel is as wide as the phone rather than a third of it. */
+.timeline-image-desktop { width: 100%; display: block; }
+.timeline-image-mobile { display: none; }
+
 .timeline {
   display: grid;
   grid-template-columns: 1fr 220px 1fr;
@@ -855,6 +863,10 @@ ul { list-style: none; }
   .timeline { grid-template-columns: 1fr; gap: 28px; max-width: 480px; margin-left: auto; margin-right: auto; }
   .timeline-center { order: -1; }
   .timeline-year { font-size: 2.4rem; }
+
+  .timeline-image-desktop { display: none; }
+  .timeline-image-mobile { display: flex; flex-direction: column; }
+  .timeline-image-mobile img { width: 100%; display: block; }
 
   .values-section { padding: 56px 0; }
   .values-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
