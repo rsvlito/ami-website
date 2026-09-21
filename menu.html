@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Menu | AMI Asian-Inspired Kitchen</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ─── NAVIGATION ─── -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo/main_GR-logo.png" alt="AMI Asian Inspired Kitchen">
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">HOME</a></li>
+      <li><a href="menu.html" class="nav-link active">MENU</a></li>
+      <li><a href="index.html#about" class="nav-link">ABOUT</a></li>
+      <li><a href="index.html#location" class="nav-link">LOCATION</a></li>
+    </ul>
+    <a href="tel:5416721688" class="nav-cta">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.3 1L6.6 10.8z"/></svg>
+      <span>CALL TO ORDER<br>(541) 672-1688</span>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" class="mobile-nav-link">Home</a>
+  <a href="menu.html" class="mobile-nav-link active">Menu</a>
+  <a href="index.html#about" class="mobile-nav-link">About</a>
+  <a href="index.html#location" class="mobile-nav-link">Location</a>
+  <a href="tel:5416721688" class="mobile-nav-cta">📞 Call to Order — (541) 672-1688</a>
+</div>
+
+<!-- ─── MENU PAGE HEADER ─── -->
+<div class="menu-page-header">
+  <h1>OUR MENU</h1>
+  <p>Fresh ingredients. Made with care.</p>
+</div>
+
+<!-- Mobile sidebar toggle -->
+<button class="menu-sidebar-toggle" id="sidebarToggle" aria-label="Open menu guide">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+  Menu Guide &amp; Icons
+</button>
+
+<!-- ─── THREE-COLUMN LAYOUT ─── -->
+<div class="menu-layout">
+
+  <!-- ═══ LEFT SIDEBAR ═══ -->
+  <aside class="menu-sidebar" id="menuSidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-page-label">MENU PAGE</div>
+      <div class="sidebar-page-title">Easy to browse.<br>Easy to order.</div>
+      <div class="sidebar-page-subtitle">— AMI Asian-Inspired Kitchen —</div>
+    </div>
+
+    <div class="sidebar-divider"></div>
+
+    <ul class="sidebar-feature-list">
+      <li class="sidebar-feature-item">
+        <div class="sidebar-check">
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,6 5,9 10,3"/></svg>
+        </div>
+        <div class="sidebar-feature-text">
+          <div class="feature-title-ko">한눈에 보는 인기 메뉴</div>
+          <div class="feature-desc">가장 많이 주문하는 메뉴를<br>사진과 함께 쉽게 배치</div>
+        </div>
+      </li>
+      <li class="sidebar-feature-item">
+        <div class="sidebar-check">
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,6 5,9 10,3"/></svg>
+        </div>
+        <div class="sidebar-feature-text">
+          <div class="feature-title-ko">바로를 한눈에</div>
+          <div class="feature-desc">각 메뉴에 들어가는 재료를<br>아이콘으로 보여서 쉽게 선택</div>
+        </div>
+      </li>
+      <li class="sidebar-feature-item">
+        <div class="sidebar-check">
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,6 5,9 10,3"/></svg>
+        </div>
+        <div class="sidebar-feature-text">
+          <div class="feature-title-ko">바로 전화 주문</div>
+          <div class="feature-desc">카드 레이아웃의 "Call to Order" 버튼으로<br>바로 전화 주문 가능</div>
+        </div>
+      </li>
+      <li class="sidebar-feature-item">
+        <div class="sidebar-check">
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2,6 5,9 10,3"/></svg>
+        </div>
+        <div class="sidebar-feature-text">
+          <div class="feature-title-ko">선내비를 최적화</div>
+          <div class="feature-desc">카드 레이아웃으로<br>모바일에서도 보기 편하게</div>
+        </div>
+      </li>
+    </ul>
+
+    <div class="sidebar-divider"></div>
+
+    <div class="sidebar-icon-guide-section">
+      <div class="sidebar-ig-title">ICON GUIDE</div>
+      <div class="icon-guide-item">
+        <img src="images/icons/Spicy.png" alt="Spicy" class="icon-guide-img">
+        <span class="icon-guide-label">Spicy</span>
+      </div>
+      <div class="icon-guide-item">
+        <img src="images/icons/best.png" alt="Best Seller" class="icon-guide-img">
+        <span class="icon-guide-label">Best Seller</span>
+      </div>
+      <div class="icon-guide-item">
+        <img src="images/icons/chef.png" alt="Chef's Pick" class="icon-guide-img">
+        <span class="icon-guide-label">Chef's Pick</span>
+      </div>
+      <div class="icon-guide-item">
+        <img src="images/icons/Vegan.png" alt="Vegetarian" class="icon-guide-img">
+        <span class="icon-guide-label">Vegetarian</span>
+      </div>
+      <div class="icon-guide-item">
+        <img src="images/icons/Gluten-Free.png" alt="Gluten Free" class="icon-guide-img">
+        <span class="icon-guide-label">Gluten Free</span>
+      </div>
+      <div class="icon-guide-item">
+        <img src="images/icons/Raw.png" alt="Raw" class="icon-guide-img">
+        <span class="icon-guide-label">Contains Raw Fish</span>
+      </div>
+      <div class="icon-guide-item">
+        <img src="images/icons/Cooked.png" alt="Cooked" class="icon-guide-img">
+        <span class="icon-guide-label">Fully Cooked</span>
+      </div>
+    </div>
+
+    <div class="sidebar-divider"></div>
+
+    <div class="sidebar-cta-box">
+      <div class="sidebar-cta-label">CALL TO ORDER</div>
+      <div class="sidebar-cta-phone">(541) 672-1688</div>
+      <div class="sidebar-cta-note">We do not offer delivery.<br>Phone order &amp; pickup only.</div>
+    </div>
+  </aside>
+
+  <!-- ═══ MAIN MENU CONTENT ═══ -->
+  <main class="menu-main">
+
+    <!-- TABS -->
+    <div class="menu-tabs-bar" id="menuTabsBar">
+      <div class="menu-tabs" role="tablist">
+        <button class="menu-tab active" data-target="popular" role="tab">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+          Popular
+        </button>
+        <button class="menu-tab" data-target="signature" role="tab">Signature Rolls</button>
+        <button class="menu-tab" data-target="classic" role="tab">Classic Rolls</button>
+        <button class="menu-tab" data-target="kitchen" role="tab">Kitchen</button>
+        <button class="menu-tab" data-target="korean" role="tab">Korean Favorites</button>
+        <button class="menu-tab" data-target="appetizers" role="tab">Appetizers</button>
+        <button class="menu-tab" data-target="noodles" role="tab">Noodles</button>
+        <button class="menu-tab" data-target="drinks" role="tab">Drinks</button>
+      </div>
+    </div>
+
+    <div class="menu-content-area">
+
+      <!-- ── POPULAR FAVORITES ── -->
+      <section class="menu-section" id="popular">
+        <div class="menu-section-header">
+          <div class="menu-section-title">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            Popular Favorites
+          </div>
+          <a href="#" class="view-all-link">VIEW ALL →</a>
+        </div>
+        <div class="menu-items-grid">
+
+          <div class="menu-card">
+            <div class="menu-card-img-wrap">
+              <img src="images/menu/Sushi/Roll/Dragon roll.jpg" alt="Dragon Roll" loading="lazy">
+              <span class="menu-card-badge badge-best">Best Seller</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-dietary">
+                <img src="images/icons/Fish.png" alt="Fish" class="dietary-icon" title="Contains Fish">
+                <img src="images/icons/Shrimp.png" alt="Shrimp" class="dietary-icon" title="Contains Shrimp">
+                <img src="images/icons/Raw.png" alt="Raw" class="dietary-icon" title="Contains Raw Fish">
+              </div>
+              <div class="menu-card-name">Dragon Roll</div>
+              <div class="menu-card-desc">Crab, shrimp tempura, avocado, cucumber, eel sauce, spicy mayo</div>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">$18.95</span>
+                <a href="tel:5416721688" class="btn-call">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="12" height="12"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.3 1L6.6 10.8z"/></svg>
+                  CALL TO ORDER
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img-wrap">
+              <img src="images/menu/Sushi/Roll/House Special.jpg" alt="Ami Special Roll" loading="lazy">
+              <span class="menu-card-badge badge-chef">Chef's Pick</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-dietary">
+                <img src="images/icons/Fish.png" alt="Fish" class="dietary-icon" title="Contains Fish">
+                <img src="images/icons/Raw.png" alt="Raw" class="dietary-icon" title="Contains Raw Fish">
+              </div>
+              <div class="menu-card-name">Ami Special Roll</div>
+              <div class="menu-card-desc">Crab, avocado, cucumber, topped with salmon, special sauce</div>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">$18.95</span>
+                <a href="tel:5416721688" class="btn-call">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="12" height="12"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.3 1L6.6 10.8z"/></svg>
+                  CALL TO ORDER
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img-wrap">
+              <img src="images/menu/Korean menu/Bibimbap.jpg" alt="Bulgogi" loading="lazy">
+              <span class="menu-card-badge badge-spicy">Spicy</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-dietary">
+                <img src="images/icons/Beef.png" alt="Beef" class="dietary-icon" title="Contains Beef">
+                <img src="images/icons/Spicy.png" alt="Spicy" class="dietary-icon" title="Spicy">
+                <img src="images/icons/Cooked.png" alt="Cooked" class="dietary-icon" title="Fully Cooked">
+              </div>
+              <div class="menu-card-name">Bulgogi</div>
+              <div class="menu-card-desc">Marinated sliced beef, cucumber, scallion, bulgogi sauce</div>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">$16.95</span>
+                <a href="tel:5416721688" class="btn-call">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="12" height="12"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.3 1L6.6 10.8z"/></svg>
+                  CALL TO ORDER
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img-wrap">
+              <img src="images/menu/Sushi/Roll/Spice Tuna Roll.jpg" alt="Spicy Tuna Roll" loading="lazy">
+              <span class="menu-card-badge badge-spicy">Spicy</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-dietary">
+                <img src="images/icons/Fish.png" alt="Fish" class="dietary-icon" title="Contains Fish">
+                <img src="images/icons/Spicy.png" alt="Spicy" class="dietary-icon" title="Spicy">
+                <img src="images/icons/Raw.png" alt="Raw" class="dietary-icon" title="Contains Raw Fish">
+              </div>
+              <div class="menu-card-name">Spicy Tuna Roll</div>
+              <div class="menu-card-desc">Spicy tuna, cucumber, scallion, spicy mayo</div>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">$8.95</span>
+                <a href="tel:5416721688" class="btn-call">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="12" height="12"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.3 1L6.6 10.8z"/></svg>
+                  CALL TO ORDER
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ── SIGNATURE ROLLS ── -->
+      <section class="menu-section" id="signature">
+        <div class="menu-section-header">
+          <div class="menu-section-title">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3" fill="currentColor" stroke="none"/></svg>
+            Signature Rolls
+          </div>
+          <a href="#" class="view-all-link">VIEW ALL →</a>
+        </div>
+        <div class="menu-items-grid">
+
+          <div class="menu-card">
+            <div class="menu-card-img-wrap">
+              <img src="images/menu/Sushi/Roll/California Roll.jpg" alt="Rainbow Roll" loading="lazy">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-dietary">
+                <img src="images/icons/Fish.png" alt="Fish" class="dietary-icon" title="Contains Fish">
+                <img src="images/icons/Raw.png" alt="Raw" class="dietary-icon" title="Contains Raw Fish">
+              </div>
+              <div class="menu-card-name">Rainbow Roll</div>
+              <div class="menu-card-desc">Crab, avocado, cucumber, topped with assorted fish</div>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">$18.95</span>
+                <a href="tel:5416721688" class="btn-call">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="12" height="12"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.3 1L6.6 10.8z"/></svg>
+                  CALL TO ORDER
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img-wrap">
+              <img src="images/menu/Sushi/Roll/Caterpillar Roll.jpg" alt="Caterpillar Roll" loading="lazy">
+              <span class="menu-card-badge badge-chef">Chef's Pick</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-dietary">
+                <img src="images/icons/Fish.png" alt="Fish" class="dietary-icon" title="Contains Fish">
+                <img src="images/icons/Cooked.png" alt="Cooked" class="dietary-icon" title="Fully Cooked">
+              </div>
+              <div class="menu-card-name">Caterpillar Roll</div>
+              <div class="menu-card-desc">Eel, cucumber, avocado, eel sauce</div>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">$18.95</span>
+                <a href="tel:5416721688" class="btn-call">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="12" height="12"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.3 1L6.6 10.8z"/></svg>
+                  CALL TO ORDER
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img-wrap">
+              <img src="images/menu/Sushi/Roll/911.jpg" alt="Spicy Dragon Roll" loading="lazy">
+              <span class="menu-card-badge badge-spicy">Spicy</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-dietary">
+                <img src="images/icons/Fish.png" alt="Fish" class="dietary-icon" title="Contains Fish">
+                <img src="images/icons/Shrimp.png" alt="Shrimp" class="dietary-icon" title="Contains Shrimp">
+                <img src="images/icons/Spicy.png" alt="Spicy" class="dietary-icon" title="Spicy">
+              </div>
+              <div class="menu-card-name">Spicy Dragon Roll</div>
+              <div class="menu-card-desc">Spicy tuna, cucumber, shrimp tempura, avocado, spicy mayo, eel sauce</div>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">$18.95</span>
+                <a href="tel:5416721688" class="btn-call">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="12" height="12"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.3 1L6.6 10.8z"/></svg>
+                  CALL TO ORDER
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img-wrap">
+              <img src="images/menu/Sushi/Roll/Mt.Shasta.jpg" alt="Volcano Roll" loading="lazy">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-dietary">
+                <img src="images/icons/Fish.png" alt="Fish" class="dietary-icon" title="Contains Fish">
+                <img src="images/icons/shell.png" alt="Shellfish" class="dietary-icon" title="Contains Shellfish">
+                <img src="images/icons/Cooked.png" alt="Cooked" class="dietary-icon" title="Fully Cooked">
+              </div>
+              <div class="menu-card-name">Volcano Roll</div>
+              <div class="menu-card-desc">Crab, avocado, cucumber, scallion, baked spicy scallop</div>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">$18.95</span>
+                <a href="tel:5416721688" class="btn-call">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="12" height="12"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.3 1L6.6 10.8z"/></svg>
+                  CALL TO ORDER
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img-wrap">
+              <img src="images/menu/Sushi/Roll/5th Avenue Roll.jpg" alt="5th Avenue Roll" loading="lazy">
+              <span class="menu-card-badge badge-best">Best Seller</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-dietary">
+                <img src="images/icons/Fish.png" alt="Fish" class="dietary-icon" title="Contains Fish">
+                <img src="images/icons/Raw.png" alt="Raw" class="dietary-icon" title="Contains Raw Fish">
+              </div>
+              <div class="menu-card-name">5th Avenue Roll</div>
+              <div class="menu-card-desc">Spicy tuna, cucumber, avocado, topped with tuna &amp; salmon</div>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">$19.95</span>
+                <a href="tel:5416721688" class="btn-call">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="12" height="12"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.3 1L6.6 10.8z"/></svg>
+                  CALL TO ORDER
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img-wrap">
+              <img src="images/menu/Sushi/Roll/San Francisco.jpg" alt="San Francisco Roll" loading="lazy">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-dietary">
+                <img src="images/icons/Fish.png" alt="Fish" class="dietary-icon" title="Contains Fish">
+                <img src="images/icons/Raw.png" alt="Raw" class="dietary-icon" title="Contains Raw Fish">
+              </div>
+              <div class="menu-card-name">San Francisco Roll</div>
+              <div class="menu-card-desc">Salmon, crab, avocado, cucumber, sesame seeds</div>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">$17.95</span>
+                <a href="tel:5416721688" class="btn-call">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="12" height="12"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.3 1L6.6 10.8z"/></svg>
+                  CALL TO ORDER
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ── CLASSIC ROLLS ── -->
+      <section class="menu-section" id="classic">
+        <div class="menu-section-header">
+          <div class="menu-section-title">Classic Rolls</div>
+          <a href="#" class="view-all-link">VIEW ALL →</a>
+        </div>
+        <div class="menu-items-grid">
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="images/menu/Sushi/Roll/California Roll.jpg" alt="California Roll" loading="lazy"></div>
+            <div class="menu-card-body">
+              <div class="menu-card-dietary"><img src="images/icons/Cooked.png" alt="Cooked" class="dietary-icon"></div>
+              <div class="menu-card-name">California Roll</div>
+              <div class="menu-card-desc">Crab, avocado, cucumber, sesame seeds</div>
+              <div class="menu-card-footer"><span class="menu-card-price">$8.95</span><a href="tel:5416721688" class="btn-call">CALL</a></div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="images/menu/Sushi/Roll/Salmon Skin Roll.jpg" alt="Salmon Skin Roll" loading="lazy"></div>
+            <div class="menu-card-body">
+              <div class="menu-card-dietary"><img src="images/icons/Fish.png" alt="Fish" class="dietary-icon"><img src="images/icons/Cooked.png" alt="Cooked" class="dietary-icon"></div>
+              <div class="menu-card-name">Salmon Skin Roll</div>
+              <div class="menu-card-desc">Grilled salmon skin, cucumber, avocado, eel sauce</div>
+              <div class="menu-card-footer"><span class="menu-card-price">$8.95</span><a href="tel:5416721688" class="btn-call">CALL</a></div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="images/menu/Sushi/Roll/Oregon Roll.jpg" alt="Oregon Roll" loading="lazy"></div>
+            <div class="menu-card-body">
+              <div class="menu-card-dietary"><img src="images/icons/Fish.png" alt="Fish" class="dietary-icon"><img src="images/icons/Raw.png" alt="Raw" class="dietary-icon"></div>
+              <div class="menu-card-name">Oregon Roll</div>
+              <div class="menu-card-desc">Salmon, cream cheese, cucumber, avocado</div>
+              <div class="menu-card-footer"><span class="menu-card-price">$9.95</span><a href="tel:5416721688" class="btn-call">CALL</a></div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="images/menu/Sushi/Roll/Veggie Roll.jpg" alt="Veggie Roll" loading="lazy"></div>
+            <div class="menu-card-body">
+              <div class="menu-card-dietary"><img src="images/icons/Vegan.png" alt="Vegan" class="dietary-icon"><img src="images/icons/Gluten-Free.png" alt="Gluten Free" class="dietary-icon"></div>
+              <div class="menu-card-name">Veggie Roll</div>
+              <div class="menu-card-desc">Avocado, cucumber, asparagus, cream cheese, sesame</div>
+              <div class="menu-card-footer"><span class="menu-card-price">$7.95</span><a href="tel:5416721688" class="btn-call">CALL</a></div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="images/menu/Sushi/Roll/Spicy Tuna Hand Roll.jpg" alt="Spicy Tuna Hand Roll" loading="lazy"></div>
+            <div class="menu-card-body">
+              <div class="menu-card-dietary"><img src="images/icons/Fish.png" alt="Fish" class="dietary-icon"><img src="images/icons/Spicy.png" alt="Spicy" class="dietary-icon"><img src="images/icons/Raw.png" alt="Raw" class="dietary-icon"></div>
+              <div class="menu-card-name">Spicy Tuna Hand Roll</div>
+              <div class="menu-card-desc">Spicy tuna, cucumber, scallion, spicy mayo in temaki</div>
+              <div class="menu-card-footer"><span class="menu-card-price">$6.95</span><a href="tel:5416721688" class="btn-call">CALL</a></div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="images/menu/Sushi/Roll/Salmon Panko.jpg" alt="Salmon Panko Roll" loading="lazy"></div>
+            <div class="menu-card-body">
+              <div class="menu-card-dietary"><img src="images/icons/Fish.png" alt="Fish" class="dietary-icon"><img src="images/icons/panko.png" alt="Panko" class="dietary-icon"></div>
+              <div class="menu-card-name">Salmon Panko Roll</div>
+              <div class="menu-card-desc">Panko-crusted salmon, cream cheese, cucumber, eel sauce</div>
+              <div class="menu-card-footer"><span class="menu-card-price">$12.95</span><a href="tel:5416721688" class="btn-call">CALL</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── KITCHEN ── -->
+      <section class="menu-section" id="kitchen">
+        <div class="menu-section-header">
+          <div class="menu-section-title">Kitchen</div>
+          <a href="#" class="view-all-link">VIEW ALL →</a>
+        </div>
+        <div class="menu-items-grid">
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="images/menu/Teriyaki/Chicken Teriyaki.jpg" alt="Chicken Teriyaki" loading="lazy"></div>
+            <div class="menu-card-body">
+              <div class="menu-card-dietary"><img src="images/icons/Chicken.png" alt="Chicken" class="dietary-icon"><img src="images/icons/Cooked.png" alt="Cooked" class="dietary-icon"></div>
+              <div class="menu-card-name">Chicken Teriyaki</div>
+              <div class="menu-card-desc">Grilled chicken, house teriyaki sauce, served with rice &amp; salad</div>
+              <div class="menu-card-footer"><span class="menu-card-price">$14.95</span><a href="tel:5416721688" class="btn-call">CALL</a></div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="images/menu/Teriyaki/Salmon Teriyaki.jpg" alt="Salmon Teriyaki" loading="lazy"></div>
+            <div class="menu-card-body">
+              <div class="menu-card-dietary"><img src="images/icons/Fish.png" alt="Fish" class="dietary-icon"><img src="images/icons/Cooked.png" alt="Cooked" class="dietary-icon"></div>
+              <div class="menu-card-name">Salmon Teriyaki</div>
+              <div class="menu-card-desc">Grilled salmon, house teriyaki sauce, served with rice &amp; salad</div>
+              <div class="menu-card-footer"><span class="menu-card-price">$16.95</span><a href="tel:5416721688" class="btn-call">CALL</a></div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="images/menu/Fried Rice & Katsu/Chicken Katsu.jpg" alt="Chicken Katsu" loading="lazy"></div>
+            <div class="menu-card-body">
+              <div class="menu-card-dietary"><img src="images/icons/Chicken.png" alt="Chicken" class="dietary-icon"><img src="images/icons/deep fry.png" alt="Deep Fried" class="dietary-icon"></div>
+              <div class="menu-card-name">Chicken Katsu</div>
+              <div class="menu-card-desc">Breaded &amp; fried chicken cutlet, tonkatsu sauce, rice &amp; salad</div>
+              <div class="menu-card-footer"><span class="menu-card-price">$13.95</span><a href="tel:5416721688" class="btn-call">CALL</a></div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="images/menu/Fried Rice & Katsu/Ton Katsu.jpg" alt="Ton Katsu" loading="lazy"></div>
+            <div class="menu-card-body">
+              <div class="menu-card-dietary"><img src="images/icons/Pork.png" alt="Pork" class="dietary-icon"><img src="images/icons/deep fry.png" alt="Deep Fried" class="dietary-icon"></div>
+              <div class="menu-card-name">Ton Katsu</div>
+              <div class="menu-card-desc">Breaded &amp; fried pork cutlet, tonkatsu sauce, rice &amp; salad</div>
+              <div class="menu-card-footer"><span class="menu-card-price">$14.95</span><a href="tel:5416721688" class="btn-call">CALL</a></div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="images/menu/Tempura/Shrimp Vegetable Tempura.jpg" alt="Shrimp Tempura" loading="lazy"></div>
+            <div class="menu-card-body">
+              <div class="menu-card-dietary"><img src="images/icons/Shrimp.png" alt="Shrimp" class="dietary-icon"><img src="images/icons/tempura.png" alt="Tempura" class="dietary-icon"></div>
+              <div class="menu-card-name">Shrimp &amp; Veggie Tempura</div>
+              <div class="menu-card-desc">Lightly battered shrimp &amp; seasonal vegetables, tempura dipping sauce</div>
+              <div class="menu-card-footer"><span class="menu-card-price">$14.95</span><a href="tel:5416721688" class="btn-call">CALL</a></div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="images/menu/Fried Rice & Katsu/Chicken Fried Rice.jpg" alt="Chicken Fried Rice" loading="lazy"></div>
+            <div class="menu-card-body">
+              <div class="menu-card-dietary"><img src="images/icons/Chicken.png" alt="Chicken" class="dietary-icon"><img src="images/icons/Cooked.png" alt="Cooked" class="dietary-icon"></div>
+              <div class="menu-card-name">Chicken Fried Rice</div>
+              <div class="menu-card-desc">Wok-fried rice, chicken, egg, vegetables, soy sauce</div>
+              <div class="menu-card-footer"><span class="menu-card-price">$12.95</span><a href="tel:5416721688" class="btn-call">CALL</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── KOREAN FAVORITES ── -->
+      <section class="menu-section" id="korean">
+        <div class="menu-section-header">
+          <div class="menu-section-title">Korean Favorites</div>
+          <a href="#" class="view-all-link">VIEW ALL →</a>
+        </div>
+        <div class="menu-items-grid">
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="images/menu/Korean menu/Bibimbap.jpg" alt="Bibimbap" loading="lazy"><span class="menu-card-badge badge-best">Best Seller</span></div>
+            <div class="menu-card-body">
+              <div class="menu-card-dietary"><img src="images/icons/Beef.png" alt="Beef" class="dietary-icon"><img src="images/icons/egg2.png" alt="Egg" class="dietary-icon"></div>
+              <div class="menu-card-name">Bibimbap</div>
+              <div class="menu-card-desc">Mixed rice bowl, beef, vegetables, egg, gochujang sauce</div>
+              <div class="menu-card-footer"><span class="menu-card-price">$14.95</span><a href="tel:5416721688" class="btn-call">CALL</a></div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="images/menu/Korean menu/Tteokbokki.jpg" alt="Tteokbokki" loading="lazy"><span class="menu-card-badge badge-spicy">Spicy</span></div>
+            <div class="menu-card-body">
+              <div class="menu-card-dietary"><img src="images/icons/Vegan.png" alt="Vegan" class="dietary-icon"><img src="images/icons/Spicy.png" alt="Spicy" class="dietary-icon"></div>
+              <div class="menu-card-name">Tteokbokki</div>
+              <div class="menu-card-desc">Rice cakes, fish cake, spicy gochujang sauce, scallions</div>
+              <div class="menu-card-footer"><span class="menu-card-price">$12.95</span><a href="tel:5416721688" class="btn-call">CALL</a></div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="images/menu/BBQ/Korean BBQ-Beef.jpg" alt="Korean BBQ Beef" loading="lazy"><span class="menu-card-badge badge-best">Best Seller</span></div>
+            <div class="menu-card-body">
+              <div class="menu-card-dietary"><img src="images/icons/Beef.png" alt="Beef" class="dietary-icon"><img src="images/icons/Cooked.png" alt="Cooked" class="dietary-icon"></div>
+              <div class="menu-card-name">Korean BBQ Beef</div>
+              <div class="menu-card-desc">Marinated beef, grilled to perfection, served with rice &amp; banchan</div>
+              <div class="menu-card-footer"><span class="menu-card-price">$18.95</span><a href="tel:5416721688" class="btn-call">CALL</a></div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="images/menu/BBQ/Korean BBQ-Chicken.jpg" alt="Korean BBQ Chicken" loading="lazy"></div>
+            <div class="menu-card-body">
+              <div class="menu-card-dietary"><img src="images/icons/Chicken.png" alt="Chicken" class="dietary-icon"><img src="images/icons/Spicy.png" alt="Spicy" class="dietary-icon"></div>
+              <div class="menu-card-name">Korean BBQ Chicken</div>
+              <div class="menu-card-desc">Spicy marinated chicken, grilled, served with rice &amp; banchan</div>
+              <div class="menu-card-footer"><span class="menu-card-price">$16.95</span><a href="tel:5416721688" class="btn-call">CALL</a></div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="images/menu/Korean menu/Beef Jigae (Beef Stew).jpg" alt="Beef Jigae" loading="lazy"><span class="menu-card-badge badge-chef">Chef's Pick</span></div>
+            <div class="menu-card-body">
+              <div class="menu-card-dietary"><img src="images/icons/Beef.png" alt="Beef" class="dietary-icon"><img src="images/icons/Spicy.png" alt="Spicy" class="dietary-icon"></div>
+              <div class="menu-card-name">Beef Jigae</div>
+              <div class="menu-card-desc">Hearty Korean beef stew, tofu, mushrooms, noodles, served with rice</div>
+              <div class="menu-card-footer"><span class="menu-card-price">$14.95</span><a href="tel:5416721688" class="btn-call">CALL</a></div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="images/menu/Korean menu/Ramen bokki.jpg" alt="Ramen Bokki" loading="lazy"><span class="menu-card-badge badge-spicy">Spicy</span></div>
+            <div class="menu-card-body">
+              <div class="menu-card-dietary"><img src="images/icons/Spicy.png" alt="Spicy" class="dietary-icon"><img src="images/icons/Cooked.png" alt="Cooked" class="dietary-icon"></div>
+              <div class="menu-card-name">Ramen Bokki</div>
+              <div class="menu-card-desc">Ramen noodles, rice cakes, spicy sauce, vegetables</div>
+              <div class="menu-card-footer"><span class="menu-card-price">$13.95</span><a href="tel:5416721688" class="btn-call">CALL</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── APPETIZERS ── -->
+      <section class="menu-section" id="appetizers">
+        <div class="menu-section-header">
+          <div class="menu-section-title">Appetizers</div>
+          <a href="#" class="view-all-link">VIEW ALL →</a>
+        </div>
+        <div class="menu-items-grid">
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="images/menu/Appetizer/Edamame.jpg" alt="Edamame" loading="lazy"></div>
+            <div class="menu-card-body">
+              <div class="menu-card-dietary"><img src="images/icons/Vegan.png" alt="Vegan" class="dietary-icon"><img src="images/icons/Gluten-Free.png" alt="GF" class="dietary-icon"></div>
+              <div class="menu-card-name">Edamame</div>
+              <div class="menu-card-desc">Steamed salted soybeans</div>
+              <div class="menu-card-footer"><span class="menu-card-price">$4.95</span><a href="tel:5416721688" class="btn-call">CALL</a></div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="images/menu/Appetizer/Gyoza - Pork Dumpling.jpg" alt="Gyoza" loading="lazy"></div>
+            <div class="menu-card-body">
+              <div class="menu-card-dietary"><img src="images/icons/Pork.png" alt="Pork" class="dietary-icon"><img src="images/icons/Cooked.png" alt="Cooked" class="dietary-icon"></div>
+              <div class="menu-card-name">Pork Gyoza (6pc)</div>
+              <div class="menu-card-desc">Pan-fried pork dumplings, dipping sauce</div>
+              <div class="menu-card-footer"><span class="menu-card-price">$7.95</span><a href="tel:5416721688" class="btn-call">CALL</a></div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="images/menu/Appetizer/Tempura Sampler.jpg" alt="Tempura Sampler" loading="lazy"></div>
+            <div class="menu-card-body">
+              <div class="menu-card-dietary"><img src="images/icons/Shrimp.png" alt="Shrimp" class="dietary-icon"><img src="images/icons/tempura.png" alt="Tempura" class="dietary-icon"></div>
+              <div class="menu-card-name">Tempura Sampler</div>
+              <div class="menu-card-desc">Assorted shrimp &amp; vegetable tempura, dipping sauce</div>
+              <div class="menu-card-footer"><span class="menu-card-price">$9.95</span><a href="tel:5416721688" class="btn-call">CALL</a></div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="images/menu/Appetizer/Kimchi.jpg" alt="Kimchi" loading="lazy"></div>
+            <div class="menu-card-body">
+              <div class="menu-card-dietary"><img src="images/icons/Vegan.png" alt="Vegan" class="dietary-icon"><img src="images/icons/Spicy.png" alt="Spicy" class="dietary-icon"></div>
+              <div class="menu-card-name">Kimchi</div>
+              <div class="menu-card-desc">House kimchi, fermented napa cabbage</div>
+              <div class="menu-card-footer"><span class="menu-card-price">$4.95</span><a href="tel:5416721688" class="btn-call">CALL</a></div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="images/menu/Appetizer/Baked Green Mussels.jpg" alt="Baked Green Mussels" loading="lazy"></div>
+            <div class="menu-card-body">
+              <div class="menu-card-dietary"><img src="images/icons/shell.png" alt="Shellfish" class="dietary-icon"><img src="images/icons/Cooked.png" alt="Cooked" class="dietary-icon"></div>
+              <div class="menu-card-name">Baked Green Mussels (4pc)</div>
+              <div class="menu-card-desc">Baked mussels with spicy mayo &amp; masago</div>
+              <div class="menu-card-footer"><span class="menu-card-price">$9.95</span><a href="tel:5416721688" class="btn-call">CALL</a></div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="images/menu/Appetizer/Corn Cheese.jpg" alt="Corn Cheese" loading="lazy"></div>
+            <div class="menu-card-body">
+              <div class="menu-card-dietary"><img src="images/icons/Vegan.png" alt="Vegan" class="dietary-icon"><img src="images/icons/Cooked.png" alt="Cooked" class="dietary-icon"></div>
+              <div class="menu-card-name">Corn Cheese</div>
+              <div class="menu-card-desc">Sweet corn baked with melted cheese, Korean style</div>
+              <div class="menu-card-footer"><span class="menu-card-price">$7.95</span><a href="tel:5416721688" class="btn-call">CALL</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── NOODLES ── -->
+      <section class="menu-section" id="noodles">
+        <div class="menu-section-header">
+          <div class="menu-section-title">Noodles</div>
+          <a href="#" class="view-all-link">VIEW ALL →</a>
+        </div>
+        <div class="menu-items-grid">
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="images/menu/Noodles/Ramen/Miso Ramen.jpg" alt="Miso Ramen" loading="lazy"><span class="menu-card-badge badge-best">Best Seller</span></div>
+            <div class="menu-card-body">
+              <div class="menu-card-dietary"><img src="images/icons/Cooked.png" alt="Cooked" class="dietary-icon"></div>
+              <div class="menu-card-name">Miso Ramen</div>
+              <div class="menu-card-desc">Rich miso broth, ramen noodles, chashu pork, corn, nori</div>
+              <div class="menu-card-footer"><span class="menu-card-price">$13.95</span><a href="tel:5416721688" class="btn-call">CALL</a></div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="images/menu/Noodles/Ramen/Tonkotu Ramen.jpg" alt="Tonkotsu Ramen" loading="lazy"><span class="menu-card-badge badge-chef">Chef's Pick</span></div>
+            <div class="menu-card-body">
+              <div class="menu-card-dietary"><img src="images/icons/Pork.png" alt="Pork" class="dietary-icon"><img src="images/icons/Cooked.png" alt="Cooked" class="dietary-icon"></div>
+              <div class="menu-card-name">Tonkotsu Ramen</div>
+              <div class="menu-card-desc">Creamy pork bone broth, chashu, soft-boiled egg, nori, scallions</div>
+              <div class="menu-card-footer"><span class="menu-card-price">$14.95</span><a href="tel:5416721688" class="btn-call">CALL</a></div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="images/menu/Noodles/Yakisoba/Chicken Yakisoba.jpg" alt="Chicken Yakisoba" loading="lazy"></div>
+            <div class="menu-card-body">
+              <div class="menu-card-dietary"><img src="images/icons/Chicken.png" alt="Chicken" class="dietary-icon"><img src="images/icons/Cooked.png" alt="Cooked" class="dietary-icon"></div>
+              <div class="menu-card-name">Chicken Yakisoba</div>
+              <div class="menu-card-desc">Stir-fried buckwheat noodles, chicken, vegetables, yakisoba sauce</div>
+              <div class="menu-card-footer"><span class="menu-card-price">$12.95</span><a href="tel:5416721688" class="btn-call">CALL</a></div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="images/menu/Noodles/Yakisoba/Shrimp Yakisoba.jpg" alt="Shrimp Yakisoba" loading="lazy"></div>
+            <div class="menu-card-body">
+              <div class="menu-card-dietary"><img src="images/icons/Shrimp.png" alt="Shrimp" class="dietary-icon"><img src="images/icons/Cooked.png" alt="Cooked" class="dietary-icon"></div>
+              <div class="menu-card-name">Shrimp Yakisoba</div>
+              <div class="menu-card-desc">Stir-fried buckwheat noodles, shrimp, vegetables, yakisoba sauce</div>
+              <div class="menu-card-footer"><span class="menu-card-price">$13.95</span><a href="tel:5416721688" class="btn-call">CALL</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── DRINKS ── -->
+      <section class="menu-section" id="drinks">
+        <div class="menu-section-header">
+          <div class="menu-section-title">Drinks</div>
+        </div>
+        <div class="menu-items-grid">
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="images/menu/Drink/1622830232311-OneCupDaiginjo180ml.png" alt="One Cup Daiginjo Sake" loading="lazy" style="object-fit:contain;background:#f5f0e8;"></div>
+            <div class="menu-card-body">
+              <div class="menu-card-name">One Cup Daiginjo</div>
+              <div class="menu-card-desc">Premium daiginjo sake, 180ml</div>
+              <div class="menu-card-footer"><span class="menu-card-price">$6.00</span><a href="tel:5416721688" class="btn-call">CALL</a></div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="images/menu/Drink/1622832553955-OneCupNigori180ml.png" alt="Nigori Sake" loading="lazy" style="object-fit:contain;background:#f5f0e8;"></div>
+            <div class="menu-card-body">
+              <div class="menu-card-name">One Cup Nigori</div>
+              <div class="menu-card-desc">Unfiltered cloudy sake, 180ml</div>
+              <div class="menu-card-footer"><span class="menu-card-price">$6.00</span><a href="tel:5416721688" class="btn-call">CALL</a></div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="images/menu/Drink/Jinro is back.png" alt="Jinro Soju" loading="lazy" style="object-fit:contain;background:#f5f0e8;"></div>
+            <div class="menu-card-body">
+              <div class="menu-card-name">Jinro Soju</div>
+              <div class="menu-card-desc">Classic Korean soju, 375ml bottle</div>
+              <div class="menu-card-footer"><span class="menu-card-price">$16.00</span><a href="tel:5416721688" class="btn-call">CALL</a></div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="images/menu/Drink/Grapefruit Soju.png" alt="Grapefruit Soju" loading="lazy" style="object-fit:contain;background:#f5f0e8;"></div>
+            <div class="menu-card-body">
+              <div class="menu-card-name">Grapefruit Soju</div>
+              <div class="menu-card-desc">Light &amp; refreshing grapefruit-flavored soju</div>
+              <div class="menu-card-footer"><span class="menu-card-price">$18.00</span><a href="tel:5416721688" class="btn-call">CALL</a></div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="images/menu/Drink/Peach soju.png" alt="Peach Soju" loading="lazy" style="object-fit:contain;background:#f5f0e8;"></div>
+            <div class="menu-card-body">
+              <div class="menu-card-name">Peach Soju</div>
+              <div class="menu-card-desc">Sweet peach-flavored soju</div>
+              <div class="menu-card-footer"><span class="menu-card-price">$18.00</span><a href="tel:5416721688" class="btn-call">CALL</a></div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="images/menu/Drink/1622833134599-HanaAwaka250ml.png" alt="Hana Awaka Sparkling Sake" loading="lazy" style="object-fit:contain;background:#f5f0e8;"></div>
+            <div class="menu-card-body">
+              <div class="menu-card-name">Hana Awaka Sparkling</div>
+              <div class="menu-card-desc">Sparkling sake, light &amp; refreshing, 250ml</div>
+              <div class="menu-card-footer"><span class="menu-card-price">$8.00</span><a href="tel:5416721688" class="btn-call">CALL</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HUNGRY BANNER -->
+      <div class="hungry-banner">
+        <div class="hungry-text">
+          <h3>Hungry?</h3>
+          <p>Call us and we'll have your order ready for pickup.</p>
+        </div>
+        <div class="hungry-actions">
+          <a href="tel:5416721688" class="btn btn-red">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.3 1L6.6 10.8z"/></svg>
+            CALL (541) 672-1688
+          </a>
+          <a href="https://maps.app.goo.gl/placeholder" target="_blank" class="btn btn-outline-dark">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            GET DIRECTIONS
+          </a>
+        </div>
+      </div>
+      <div class="hungry-note">* All menu items and prices are subject to change without notice.</div>
+
+    </div><!-- /menu-content-area -->
+  </main>
+
+  <!-- ═══ RIGHT PANE ═══ -->
+  <aside class="menu-right-pane">
+
+    <div class="right-pane-section">
+      <div class="right-pane-title">QUICK PICKS</div>
+      <div class="right-pane-card">
+        <img src="images/menu/Sushi/Roll/Dragon roll.jpg" alt="Dragon Roll">
+        <div class="right-pane-card-body">
+          <div class="right-pane-card-name">Dragon Roll</div>
+          <div class="right-pane-card-price">$18.95</div>
+        </div>
+      </div>
+      <div class="right-pane-card">
+        <img src="images/menu/Sushi/Roll/House Special.jpg" alt="Ami Special Roll">
+        <div class="right-pane-card-body">
+          <div class="right-pane-card-name">Ami Special Roll</div>
+          <div class="right-pane-card-price">$18.95</div>
+        </div>
+      </div>
+      <div class="right-pane-card">
+        <img src="images/menu/Korean menu/Bibimbap.jpg" alt="Bibimbap">
+        <div class="right-pane-card-body">
+          <div class="right-pane-card-name">Bibimbap</div>
+          <div class="right-pane-card-price">$14.95</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="right-pane-section">
+      <div class="right-pane-title">ORDER NOW</div>
+      <div class="right-pane-cta">
+        <h4>Ready to order?</h4>
+        <p>We do not offer delivery. Phone order &amp; pickup only.</p>
+        <a href="tel:5416721688" class="btn btn-red" style="margin-bottom:8px;">📞 (541) 672-1688</a>
+      </div>
+    </div>
+
+    <div class="right-pane-section">
+      <div class="right-pane-title">FIND US</div>
+      <div style="background:var(--cream-light);border-radius:4px;overflow:hidden;border:1px solid var(--border-light);">
+        <img src="images/about/IMG_9759.jpeg" alt="Ami Restaurant Location" style="width:100%;aspect-ratio:4/3;object-fit:cover;">
+        <div style="padding:10px 12px;">
+          <div style="font-size:11px;font-weight:600;margin-bottom:2px;">AMI Asian-Inspired Kitchen</div>
+          <div style="font-size:11px;color:var(--text-light);">Roseburg, OR</div>
+          <a href="https://maps.app.goo.gl/placeholder" target="_blank" style="display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;color:var(--green-accent);margin-top:8px;">
+            Get Directions →
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </aside>
+
+</div><!-- /menu-layout -->
+
+<!-- ─── MOBILE BOTTOM NAV ─── -->
+<nav class="mobile-bottom-nav" aria-label="Mobile navigation">
+  <div class="mobile-bottom-nav-inner">
+    <a href="index.html" class="mobile-bottom-item">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+      <span>Home</span>
+    </a>
+    <a href="menu.html" class="mobile-bottom-item active">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M18.06 22.99h1.66c.84 0 1.53-.64 1.63-1.46L23 5.05h-5V1h-1.97v4.05h-4.97l.3 2.34c1.71.47 3.31 1.32 4.27 2.26 1.44 1.42 2.43 2.89 2.43 5.29v8.05zM1 21.99V21h15.03v.99c0 .55-.45 1-1.01 1H2.01c-.56 0-1.01-.45-1.01-1zm15.03-7c0-8.17-15.03-8.17-15.03 0h15.03z"/></svg>
+      <span>Menu</span>
+    </a>
+    <a href="tel:5416721688" class="mobile-bottom-item">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.3 1L6.6 10.8z"/></svg>
+      <span>Call</span>
+    </a>
+    <a href="index.html#location" class="mobile-bottom-item">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+      <span>Directions</span>
+    </a>
+    <a href="#" id="mobileSidebarBtn" class="mobile-bottom-item">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+      <span>Guide</span>
+    </a>
+  </div>
+</nav>
+
+<script src="main.js"></script>
+</body>
+</html>
