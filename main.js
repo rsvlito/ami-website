@@ -61,32 +61,6 @@ if (menuTabs.length) {
   sections.forEach(section => observer.observe(section));
 }
 
-// Menu sidebar toggle (mobile)
-const sidebarToggle = document.getElementById('sidebarToggle');
-const mobileSidebarBtn = document.getElementById('mobileSidebarBtn');
-const menuSidebar = document.getElementById('menuSidebar');
-
-function toggleSidebar() {
-  if (!menuSidebar) return;
-  menuSidebar.classList.toggle('open');
-}
-
-if (sidebarToggle) sidebarToggle.addEventListener('click', toggleSidebar);
-if (mobileSidebarBtn) mobileSidebarBtn.addEventListener('click', toggleSidebar);
-
-// Close sidebar when clicking outside on mobile
-document.addEventListener('click', (e) => {
-  if (!menuSidebar) return;
-  if (
-    menuSidebar.classList.contains('open') &&
-    !menuSidebar.contains(e.target) &&
-    e.target !== sidebarToggle &&
-    e.target !== mobileSidebarBtn &&
-    !mobileSidebarBtn?.contains(e.target)
-  ) {
-    menuSidebar.classList.remove('open');
-  }
-});
 
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
