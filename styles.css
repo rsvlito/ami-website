@@ -728,6 +728,98 @@ ul { list-style: none; }
 .btn-call:hover { background: var(--red-hover); }
 .btn-call svg { width: 12px; height: 12px; }
 
+.menu-card-note { font-size: 10px; color: var(--text-light); margin-bottom: 8px; font-style: italic; }
+
+/* ─── SUBSECTION TITLES ─── */
+.menu-subsection-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin: 28px 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border-light);
+}
+.menu-subsection-title:first-child { margin-top: 8px; }
+.subsection-note { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 400; color: var(--text-light); margin-left: 6px; }
+
+.menu-section-note {
+  font-size: 11px;
+  color: var(--text-light);
+  margin: -4px 0 16px;
+  font-style: italic;
+}
+
+/* ─── MENU LIST (for many-item sections without images) ─── */
+.menu-list {
+  border: 1px solid var(--border-light);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+.menu-list-item {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 9px 14px;
+  border-bottom: 1px solid var(--border-light);
+}
+.menu-list-item:last-child { border-bottom: none; }
+.menu-list-item:nth-child(even) { background: rgba(0,0,0,0.015); }
+.menu-list-left { flex: 1; min-width: 0; }
+.menu-list-name {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--text-dark);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.menu-list-meta {
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--text-light);
+  background: var(--cream-light);
+  border: 1px solid var(--border-light);
+  padding: 1px 5px;
+  border-radius: 2px;
+}
+.menu-list-dietary { display: flex; gap: 3px; margin-top: 2px; flex-wrap: wrap; }
+.menu-list-desc {
+  font-size: 11px;
+  color: var(--text-light);
+  margin-top: 2px;
+  line-height: 1.45;
+}
+.menu-list-note {
+  font-size: 10.5px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-top: 2px;
+}
+.menu-list-price {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-dark);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* ─── ADD-ON / NOTE ROWS ─── */
+.menu-add-on {
+  font-size: 11px;
+  color: var(--text-light);
+  background: var(--cream-lightest);
+  border: 1px solid var(--border-light);
+  border-radius: 3px;
+  padding: 7px 12px;
+  margin-top: 6px;
+  margin-bottom: 4px;
+}
+.menu-add-on strong { color: var(--text-dark); }
+
 /* ─── RIGHT PANE ─── */
 .menu-right-pane {
   background: var(--cream-lightest);
