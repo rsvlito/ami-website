@@ -62,6 +62,27 @@ if (menuTabs.length) {
 }
 
 
+// Mobile Food Icon Guide modal
+const iconGuideToggle = document.getElementById('iconGuideToggle');
+const iconGuideModal = document.getElementById('iconGuideModal');
+const iconGuideClose = document.getElementById('iconGuideClose');
+
+if (iconGuideToggle && iconGuideModal) {
+  const openGuide = () => {
+    iconGuideModal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  };
+  const closeGuide = () => {
+    iconGuideModal.classList.remove('open');
+    document.body.style.overflow = '';
+  };
+  iconGuideToggle.addEventListener('click', openGuide);
+  if (iconGuideClose) iconGuideClose.addEventListener('click', closeGuide);
+  iconGuideModal.addEventListener('click', (e) => {
+    if (e.target === iconGuideModal) closeGuide();
+  });
+}
+
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', (e) => {
