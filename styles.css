@@ -836,8 +836,8 @@ ul { list-style: none; }
 /* Rows converted from the old large photo-card layout: small thumbnail + text */
 .menu-list-item-photo { align-items: flex-start; }
 .menu-list-thumb {
-  width: 52px;
-  height: 52px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
   border-radius: 4px;
   flex-shrink: 0;
@@ -1080,7 +1080,7 @@ ul { list-style: none; }
   .hungry-text h3 { font-size: 1.5rem; }
 
   .menu-list-item { padding: 10px 12px; }
-  .menu-list-thumb { width: 44px; height: 44px; }
+  .menu-list-thumb { width: 100px; height: 100px; }
   .menu-sidebar-toggle { margin: 14px 16px 0; }
   .icon-guide-modal-inner { padding: 18px 18px 24px; }
 }
